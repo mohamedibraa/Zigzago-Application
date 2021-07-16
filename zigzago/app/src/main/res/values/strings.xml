@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ZIGZAGO</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_text_1">BestSeller</string>
+    <string name="tab_text_2">Sandwitches</string>
+    <string name="tab_text_3">Main dishes</string>
+    <string name="tab_text_4">Desserts</string>
+    <string name="tab_text_5">Appetizer</string>
+    <string name="tab_text_6">Drinks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

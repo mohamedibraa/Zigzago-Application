@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rating">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vigiback"
+        android:orientation="vertical"
+        >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/tool"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/black"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textSize="20dp"
+            android:background="@drawable/zigzagopng1"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logopng5"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Show some love, Rate 5 stars"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="119dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+
+
+            >
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/red"
+                android:stepSize="0.5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            >
+
+            <Button
+                android:id="@+id/rate"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight=".03"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="Rate"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:textStyle="normal"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
